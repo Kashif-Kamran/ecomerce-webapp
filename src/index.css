@@ -6,57 +6,106 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
+    /* White for a clean look */
+    --foreground: 210 22% 15%;
+    /* Dark gray for readable text */
+    --card: 0 0% 98%;
+    /* Soft background for cards */
+    --card-foreground: 210 22% 15%;
+    /* Text on cards */
     --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
-    --primary: 262.1 83.3% 57.8%;
-    --primary-foreground: 210 20% 98%;
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220.9 39.3% 11%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 262.1 83.3% 57.8%;
-    --radius: 0.3rem;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    /* Pure white for popovers */
+    --popover-foreground: 210 22% 15%;
+    /* Text on popovers */
+    --primary: 348 83% 53%;
+    /* Vivid red for CTAs (e.g., Buy Now) */
+    --primary-foreground: 0 0% 100%;
+    /* White text on primary */
+    --secondary: 197 72% 54%;
+    /* Vibrant blue for secondary actions */
+    --secondary-foreground: 0 0% 100%;
+    /* White text on secondary */
+    --muted: 210 15% 95%;
+    /* Light muted gray for borders and subtle text */
+    --muted-foreground: 210 10% 44%;
+    /* Muted foreground for text */
+    --accent: 49 95% 61%;
+    /* Bright yellow for highlights or sale banners */
+    --accent-foreground: 0 0% 15%;
+    /* Dark text on accent */
+    --destructive: 348 83% 47%;
+    /* Softer red for destructive actions */
+    --destructive-foreground: 0 0% 100%;
+    /* White on destructive */
+    --border: 210 15% 90%;
+    /* Light gray border */
+    --input: 0 0% 98%;
+    /* Light input background */
+    --ring: 210 78% 50%;
+    /* Blue ring for focus states */
+    --radius: 0.4rem;
+    /* Slightly rounded corners for a modern look */
+    --chart-1: 348 83% 53%;
+    /* For charts, sales data visualization */
+    --chart-2: 197 72% 54%;
+    /* Complementary color for data */
+    --chart-3: 49 95% 61%;
+    /* Data visualization */
+    --chart-4: 120 57% 40%;
+    /* Green for successful data points */
+    --chart-5: 30 87% 58%;
+    /* Orange for attention-grabbing points */
   }
 
   .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 263.4 70% 50.4%;
-    --primary-foreground: 210 20% 98%;
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 263.4 70% 50.4%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --background: 210 22% 10%;
+    /* Dark, almost black */
+    --foreground: 0 0% 98%;
+    /* White for readability */
+    --card: 210 22% 15%;
+    /* Dark gray cards */
+    --card-foreground: 0 0% 98%;
+    /* Light text on dark cards */
+    --popover: 210 22% 15%;
+    /* Same as cards */
+    --popover-foreground: 0 0% 98%;
+    /* White text */
+    --primary: 348 83% 53%;
+    /* Same red for consistency */
+    --primary-foreground: 0 0% 100%;
+    /* White text on red */
+    --secondary: 197 72% 54%;
+    /* Vibrant blue */
+    --secondary-foreground: 0 0% 100%;
+    /* White text */
+    --muted: 210 10% 30%;
+    /* Darker muted gray */
+    --muted-foreground: 0 0% 80%;
+    /* Lighter muted text */
+    --accent: 49 95% 61%;
+    /* Bright yellow pop */
+    --accent-foreground: 0 0% 15%;
+    /* Dark text on yellow */
+    --destructive: 348 83% 47%;
+    /* Softer red for errors */
+    --destructive-foreground: 0 0% 100%;
+    /* White on red */
+    --border: 210 22% 15%;
+    /* Darker border */
+    --input: 210 22% 20%;
+    /* Dark input background */
+    --ring: 49 95% 61%;
+    /* Yellow focus ring */
+    --chart-1: 348 83% 53%;
+    /* Consistent with light mode */
+    --chart-2: 197 72% 54%;
+    /* Same vibrant blue */
+    --chart-3: 49 95% 61%;
+    /* Bright yellow */
+    --chart-4: 120 57% 40%;
+    /* Green */
+    --chart-5: 30 87% 58%;
+    /* Orange */
   }
 }
 
